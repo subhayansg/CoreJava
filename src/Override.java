@@ -20,6 +20,5 @@ public class Override {
 //	  Sub s = new Super();    // Sub reference, super class object NOT POSSIBLE
         sup.display();          // method available in Super class, allowed
 //        sup.newDisplay();       // method not available in Super class, NOT ALLOWED
-
     }
 }
