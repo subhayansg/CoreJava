@@ -11,8 +11,8 @@ public class ReverseArray {
     public static void main(String[] args) {
         int[] arrN = {1,2,3,4,5};
         int[] reversedArray = reverseArrayFunc(arrN);
-        for(int j = 0; j < reversedArray.length; j++) {
-            System.out.print(reversedArray[j] + " ");
+        for (int i : reversedArray) {
+            System.out.print(i + " ");
         }
     }
 }

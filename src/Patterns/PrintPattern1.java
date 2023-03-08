@@ -1,3 +1,4 @@
+package Patterns;
 /*
 * First check how many rows are there.
 * Then check in each rows, how many columns are there.

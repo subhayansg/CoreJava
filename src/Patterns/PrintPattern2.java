@@ -1,3 +1,4 @@
+package Patterns;
 /*
  * Print the following:
             1 1 1
