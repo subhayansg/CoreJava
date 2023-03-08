@@ -1,3 +1,5 @@
+package Arrays;
+
 public class ReverseArray {
     static int[] reverseArrayFunc(int[] arr) {
         int len = arr.length;

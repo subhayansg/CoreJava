@@ -1,3 +1,5 @@
+package Arrays;
+
 public class Array2D {
     public static void main(String[] args) {
         int[][] A = new int[3][4];

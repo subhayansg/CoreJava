@@ -1,3 +1,5 @@
+package Arrays;
+
 public class SearchInArray {
     static int findMaxElement(int[] arr) {
         int maxElement = 0;

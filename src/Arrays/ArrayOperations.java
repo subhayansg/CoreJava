@@ -1,3 +1,5 @@
+package Arrays;
+
 /*
 * Rotate an array - either left or right, 12345 -> left 23451, right 51234
 * Insert an element in array in a given location
