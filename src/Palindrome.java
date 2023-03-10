@@ -5,8 +5,8 @@ public class Palindrome {
         int len = word.length();
         String palin = "";
         for (int i = len - 1; i >= 0; i--) {
-//            char c = word.charAt(i);
-            palin += word.charAt(i);
+            char c = word.charAt(i);
+            palin += c;
         }
         if (palin.equals(word))
             return " is a palindrome";
