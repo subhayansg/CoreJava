@@ -1,3 +1,6 @@
+/*
+An interface having a single abstract method is called a functional interface.
+ */
 @FunctionalInterface
 interface IMyLambda {
     void display();
@@ -10,11 +13,13 @@ interface IMyLambda {
 //    }
 //}
 
-public class LambdaExpressions {
+public class LambdaExpressions1 {
     public static void main(String[] args) {
 //        IMyLambda m = new MyClass();       // standard way of accessing display() method
         // use lambda
-        IMyLambda m = () -> System.out.println("Hello World using lambda expression!");  // lambda expression, so ';' is needed
+        IMyLambda m = () -> System.out.println("Hello World using lambda expression!");
+        // lambda expression, so ';' is needed.
+        // type reference of a lambda expression will always be a functional interface.
         m.display();
     }
 }
