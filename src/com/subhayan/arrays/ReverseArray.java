@@ -1,4 +1,4 @@
-package Arrays;
+package com.subhayan.arrays;
 
 public class ReverseArray {
     static int[] reverseArrayFunc(int[] arr) {

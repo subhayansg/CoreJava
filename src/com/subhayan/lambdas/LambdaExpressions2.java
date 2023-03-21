@@ -1,3 +1,5 @@
+package com.subhayan.lambdas;
+
 @FunctionalInterface
 interface IMyLambda2 {
     int add(int a, int b);

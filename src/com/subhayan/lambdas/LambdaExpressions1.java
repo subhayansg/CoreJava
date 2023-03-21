@@ -1,3 +1,5 @@
+package com.subhayan.lambdas;
+
 /*
 An interface having a single abstract method is called a functional interface.
  */
@@ -6,8 +8,8 @@ interface IMyLambda {
     void display();
 }
 
-// Sample class which implements IMyLambda
-//class MyClass implements IMyLambda {
+// Sample class which implements Lambdas.IMyLambda
+//class MyClass implements Lambdas.IMyLambda {
 //    public void display() {
 //        System.out.println("Hello world!");
 //    }
@@ -15,7 +17,7 @@ interface IMyLambda {
 
 public class LambdaExpressions1 {
     public static void main(String[] args) {
-//        IMyLambda m = new MyClass();       // standard way of accessing display() method
+//        Lambdas.IMyLambda m = new MyClass();       // standard way of accessing display() method
         // use lambda
         IMyLambda m = () -> System.out.println("Hello World using lambda expression!");
         // lambda expression, so ';' is needed.

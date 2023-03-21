@@ -1,23 +1,24 @@
-package Patterns;
+package com.subhayan.patterns;
 /*
  * Print the following:
-        1 2 3
-        4 5 6
-        7 8 9
+            4 3 2 1
+            4 3 2 1
+            4 3 2 1
+            4 3 2 1
  */
+import java.util.Scanner;
 
-public class PrintPattern4 {
+public class PrintPattern3 {
     public static void main(String[] args) {
-        int rows = 3, cols = 3, i = 1, k = 0;
+        int rows = 4, cols = 4, i = 1;
         while(i <= rows) {
             int j = 1;
             while(j <= cols) {
-                System.out.print((j + k * cols) + " ");
+                System.out.print((cols - j + 1) + " ");
                 j++;
             }
             System.out.println();
             i++;
-            k++;
         }
     }
 

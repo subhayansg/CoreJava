@@ -1,4 +1,4 @@
-package Arrays;
+package com.subhayan.arrays;
 
 /*
 * Rotate an array - either left or right, 12345 -> left 23451, right 51234

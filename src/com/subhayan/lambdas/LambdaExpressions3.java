@@ -1,3 +1,5 @@
+package com.subhayan.lambdas;
+
 @FunctionalInterface
 interface IMyLambda3 {
     void display();

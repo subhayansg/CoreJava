@@ -1,20 +1,19 @@
-package Patterns;
+package com.subhayan.patterns;
 /*
  * Print the following:
-        1
-        2 3
-        4 5 6
-        7 8 9 10
+        A
+        B C
+        C D E
+        D E F G
  */
 
-public class PrintPattern5 {
+public class PrintPattern9 {
     public static void main(String[] args) {
-        int n = 4, i = 1, cnt = 1;
+        int n = 4, i = 1;
         while(i <= n) {
             int j = 1;
             while (j <= i) {
-                System.out.print(cnt + " ");
-                cnt++;
+                System.out.print((char) ('A' + i + j - 2) + " ");
                 j++;
             }
             System.out.println();

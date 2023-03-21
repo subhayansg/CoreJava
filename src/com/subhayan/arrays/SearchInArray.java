@@ -1,4 +1,4 @@
-package Arrays;
+package com.subhayan.arrays;
 
 public class SearchInArray {
     static int findMaxElement(int[] arr) {

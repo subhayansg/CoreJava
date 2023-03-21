@@ -1,4 +1,4 @@
-package Patterns;
+package com.subhayan.patterns;
 /*
  * Print the following:
             1

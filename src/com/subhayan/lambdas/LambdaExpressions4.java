@@ -1,3 +1,5 @@
+package com.subhayan.lambdas;
+
 /*
 Method reference
 On a functional interface we can assign a reference to a method
