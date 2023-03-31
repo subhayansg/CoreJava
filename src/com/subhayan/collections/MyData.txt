@@ -1,0 +1,6 @@
+#Laptop
+#Fri Mar 31 22:56:59 IST 2023
+Brand=Lenovo
+Processor=i5
+OS=Windows11
+Model=Legion
