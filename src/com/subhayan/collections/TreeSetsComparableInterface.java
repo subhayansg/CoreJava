@@ -2,8 +2,7 @@ package com.subhayan.collections;
 
 import java.util.TreeSet;
 
-class Point implements Comparable {
-
+class Point implements Comparable<Point> {
     int x, y;
     public Point(int x, int y) {
         this.x = x;
@@ -11,8 +10,7 @@ class Point implements Comparable {
     }
 
     @Override
-    public int compareTo(Object o) {
-        Point p = (Point) o;  // compareTo won't accept Point, it accepts Object only
+    public int compareTo(Point p) {
         if (this.x > p.x)
             return 1;
         else if (this.x == p.x) {

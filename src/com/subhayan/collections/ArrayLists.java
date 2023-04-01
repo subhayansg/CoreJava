@@ -44,6 +44,12 @@ public class ArrayLists {
         System.out.println();
 
         al1.forEach(n -> show(n));  // al1.forEach(ArrayLists::show);
+
+        // Convert an ArrayList to an Array
+        Integer[] arr1 = al1.toArray(new Integer[0]);  // passing the size of the array to be 0, i.e. less than the
+                                                       // size of the ArrayList creates another array of proper size
+        for (int x : arr1)
+            System.out.print(x + " ");
     }
 
     private static void show(Integer n) {

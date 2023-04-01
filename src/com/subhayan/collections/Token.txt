@@ -1,0 +1,4 @@
+name=Ankana
+address=Sukpur
+location=Shibtola
+bike=Platina
