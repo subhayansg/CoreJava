@@ -16,6 +16,16 @@ public class PriorityQueueLearn {
         // Get top 3 students according to their maths marks
         PriorityQueue<StudentMarks> spq = new PriorityQueue<>(stMarks);  // add all Student Marks to the PQ
 
+        /*
+         Total Ordering (Comparator) will always override the Natural Ordering (Comparable)
+         In StudentMarks, we have implemented the Comparable interface's compareTo() method
+         -----------------------------------------------------------------------------------
+         Let us use Comparator here and let's find top3 using Physics marks
+         -----------------------------------------------------------------------------------
+         PriorityQueue<StudentMarks> spq = new PriorityQueue<StudentMarks>((s1, s2) -> s2.getPhysics() - s1.getPhysics());
+         The above statement will override the Comparable's compareTo() and will return top values based on Physics marks
+         */
+
         List<StudentMarks> top3 = new ArrayList<>();
         int index = 0;
         while (!spq.isEmpty()) {
@@ -40,7 +50,7 @@ public class PriorityQueueLearn {
         // PriorityQueue<Integer> pq = new PriorityQueue<>();
         PriorityQueue<Integer> pq = new PriorityQueue<>(new MyCustomComparator()); // [100, 2] --> as top 2
                                         // This ordering is passed to the PQ --> Total Ordering --> Comparator
-        /* The above code can be written using lambdas like below */
+        /* The above code can be written using lambdas like below, we don't need the separate class MyCustomComparator */
         PriorityQueue<Integer> pqL = new PriorityQueue<>((a, b) -> b - a);
 
         pq.offer(1);

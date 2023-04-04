@@ -1,5 +1,7 @@
 package com.subhayan.collections.riddhi;
 
+import java.util.Objects;
+
 public class StudentMarks implements Comparable<StudentMarks> {
     private int maths;
     private int physics;
@@ -46,4 +48,18 @@ public class StudentMarks implements Comparable<StudentMarks> {
         // Since we need top 3 marks
         return o.maths - this.maths;
     }  // this ordering class is implementing --> Natural Ordering --> Comparable
+
+    // Need to override below two methods for this class to be used with HashSets
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        StudentMarks that = (StudentMarks) o;
+        return maths == that.maths && physics == that.physics;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(maths, physics);
+    }
 }

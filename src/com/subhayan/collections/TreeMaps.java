@@ -1,7 +1,10 @@
 /*
 Tree maintains the entries(K,V) in sorted order based on the Keys
+This class implements sorted maps
+It cannot have duplicate keys
 Uses Red-Black tree based NavigableMap implementation
-Implementation provides guranteed log(n) time cost for containsKey, get, put and remove operations
+It provides guranteed log(n) time cost for containsKey, get, put and remove operations
+A Map does not implement the Iterable interface, so directly it cannot be iterated
  */
 package com.subhayan.collections;
 

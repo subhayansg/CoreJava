@@ -1,4 +1,5 @@
 /*
+This class implements ordered maps
 Same as HashMaps, LinkedHashMaps are also used for storing K-V
 All operations like put, get, remove are constant time o(1)
 In HashMap, in the hash table only values will be present

@@ -1,6 +1,8 @@
 /*
-This is a legacy class
+This is a legacy class, implements unordered maps
 stores K-V
+This class is thread safe and permits non-null keys and values only
+Thread safety comes with performance penalty
  */
 package com.subhayan.collections;
 
